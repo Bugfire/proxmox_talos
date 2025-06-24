@@ -15,7 +15,7 @@ locals {
   talos_name = "talos-k8s"
 
   talos_common = {
-    gateway = "192.168.14.1"
+    gateway = "192.168.14.2"
     ip_mask = 24
     cores   = 4
     mem_mb  = 4096
