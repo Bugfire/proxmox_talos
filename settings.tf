@@ -15,7 +15,7 @@ locals {
   talos_name = "talos-k8s"
 
   talos_common = {
-    gateway = "192.168.13.254"
+    gateway = "192.168.14.1"
     ip_mask = 24
     cores   = 4
     mem_mb  = 4096
@@ -26,12 +26,12 @@ locals {
   talos_cp_list = [
     {
       name    = "talos-cp-01"
-      ip_addr = "192.168.13.70"
+      ip_addr = "192.168.14.70"
       node    = "deskmeet1"
     },
     {
       name    = "talos-cp-02"
-      ip_addr = "192.168.13.71"
+      ip_addr = "192.168.14.71"
       node    = "dynadesk1"
     },
   ]
@@ -39,17 +39,17 @@ locals {
   talos_wk_list = [
     {
       name    = "talos-wk-01"
-      ip_addr = "192.168.13.72"
+      ip_addr = "192.168.14.72"
       node    = "deskmeet1"
     },
     {
       name    = "talos-wk-02"
-      ip_addr = "192.168.13.73"
+      ip_addr = "192.168.14.73"
       node    = "dynadesk1"
     },
     {
       name    = "talos-wk-03"
-      ip_addr = "192.168.13.74"
+      ip_addr = "192.168.14.74"
       node    = "dynadesk1"
     },
   ]
